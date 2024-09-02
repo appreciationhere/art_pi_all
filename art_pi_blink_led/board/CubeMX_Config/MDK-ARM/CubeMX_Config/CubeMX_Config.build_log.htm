@@ -1,0 +1,91 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.40.0.0
+Copyright (C) 2024 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: lin Administrator, zq, LIC=BUURY-I0UAZ-MMC9I-T6F0K-ESB4E-37YHF
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.40.0.3
+Toolchain Path:  C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.40.0.3
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.3.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+C:\stm_mcudata\art_pi\sdk-bsp-stm32h750-realthread-artpi\projects\art_pi_blink_led\board\CubeMX_Config\MDK-ARM\CubeMX_Config.uvprojx
+Project File Date:  08/22/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCC\Bin'
+Build target 'CubeMX_Config'
+compiling stm32h7xx_ll_delayblock.c...
+compiling stm32h7xx_hal_sd.c...
+compiling stm32h7xx_ll_sdmmc.c...
+compiling stm32h7xx_ll_fmc.c...
+compiling stm32h7xx_hal_ltdc_ex.c...
+compiling stm32h7xx_hal_sd_ex.c...
+compiling stm32h7xx_hal_lptim.c...
+compiling stm32h7xx_hal_eth_ex.c...
+compiling main.c...
+../Core/Src/main.c(530): error:  #20: identifier "GFXMMU_VIRTUAL_BUFFER0_BASE" is undefined
+    pLayerCfg1.FBStartAdress = GFXMMU_VIRTUAL_BUFFER0_BASE;
+../Core/Src/main.c(567): error:  #136: struct "<unnamed>"  has no field "TranceiverPresent"
+    hsd1.Init.TranceiverPresent = SDMMC_TRANSCEIVER_NOT_PRESENT;
+../Core/Src/main.c(599): error:  #136: struct "<unnamed>"  has no field "TranceiverPresent"
+    hsd2.Init.TranceiverPresent = SDMMC_TRANSCEIVER_NOT_PRESENT;
+../Core/Src/main.c: 0 warnings, 3 errors
+compiling stm32h7xx_hal_ltdc.c...
+compiling stm32h7xx_hal_sdram.c...
+compiling stm32h7xx_hal_spi_ex.c...
+compiling stm32h7xx_hal_spi.c...
+compiling stm32h7xx_hal_tim_ex.c...
+compiling stm32h7xx_hal_pcd.c...
+compiling stm32h7xx_hal_pcd_ex.c...
+compiling system_stm32h7xx.c...
+compiling stm32h7xx_hal_uart_ex.c...
+compiling stm32h7xx_ll_usb.c...
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c(949): warning:  #3108-D: attribute "__packed__" does not apply here
+        USBx_DFIFO((uint32_t)ch_ep_num) = __UNALIGNED_UINT32_READ(pSrc);
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c(973): warning:  #3108-D: attribute "__packed__" does not apply here
+      __UNALIGNED_UINT32_WRITE(pDest, USBx_DFIFO(0U));
+../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c: 2 warnings, 0 errors
+compiling stm32h7xx_hal_uart.c...
+compiling stm32h7xx_hal_tim.c...
+"CubeMX_Config\CubeMX_Config.axf" - 3 Error(s), 2 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.1.0.pack
+                ARM::CMSIS@6.1.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.1.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32H7xx_DFP.3.0.0.pack
+                Keil::STM32H7xx_DFP@3.0.0
+                STMicroelectronics STM32H7 Series Device Support and Examples
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_CubeMX_Config
+  C:/Users/Administrator/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include
+  C:/Users/Administrator/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.0.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@6.1.0
+      Include file:  CMSIS/Core/Include/tz_context.h
+Target not created.
+Build Time Elapsed:  00:00:46
+</pre>
+</body>
+</html>
